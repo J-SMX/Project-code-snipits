@@ -1,5 +1,9 @@
 # Project 1: Large-Scale Data Storage and Processing CS4234/5234 Project Overview
 
+Grade Achieved:
+  - 90% for main code
+  - 92% for report and report code
+
 This project involves building an **end-to-end analytics pipeline** using big data tools to process and analyze the **Enron email dataset**, a real-world corpus containing communications among Enron employees prior to the company's collapse.
 
 ## Objectives
