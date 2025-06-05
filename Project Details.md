@@ -1,5 +1,9 @@
 # Project 1: Large-Scale Data Storage and Processing CS4234/5234 Project Overview
 
+Grade Achieved:
+  - 90% for main code
+  - 92% for report and report code
+
 This project involves building an **end-to-end analytics pipeline** using big data tools to process and analyze the **Enron email dataset**, a real-world corpus containing communications among Enron employees prior to the company's collapse.
 
 ## Objectives
@@ -40,3 +44,45 @@ This project involves building an **end-to-end analytics pipeline** using big da
 - Language: Python (RDD API only)
 - Environment: Spark on the `bigdata` cluster
 - No generative AI usage permitted
+
+
+# Project 2: Advanced Distributed Systems CS4860/5860 Paxos Implementation Project Overview
+
+Grade Achieved: 60%
+
+This project centers on implementing the **Paxos distributed consensus algorithm** in **Elixir**, as part of a fault-tolerant, replicated database system for an online flight booking service (FlyWithMe.com). The goal is to ensure that even in the presence of concurrent requests and process failures, consensus is reached on which user successfully reserves a seat.
+
+## Project Context
+
+FlyWithMe.com needs a system where:
+- Reservation data is replicated across nodes for availability.
+- Seat reservations must be conflict-free even with concurrent proposals.
+- The system continues to operate as long as a **majority of nodes** are functional.
+
+To meet these requirements, you must implement a **Paxos protocol layer**.
+
+## Implementation Requirements
+
+You are required to complete the `paxos.ex` Elixir file to support the following operations:
+
+- `start(name, participants, upper)`: Starts a Paxos process and registers it.
+- `propose(pid, value)`: Submits a value for consensus (does nothing until `start_ballot` is called).
+- `start_ballot(pid)`: Triggers the 2-phase Paxos protocol as leader.
+
+This involves handling:
+- Proposal registration and ballot initiation.
+- Majority quorum detection.
+- Leader election and value agreement.
+
+## Evaluation Goals
+
+Your implementation will be tested against a suite of unit and integration tests. Marks are awarded based on the following capabilities:
+
+- **Basic Protocol**: Correct handling of Paxos phases with concurrent ballots.
+- **Crash Fault Tolerance**: Proper behavior in the event of leader or follower failure.
+- **Distributed Operation**: Working correctly across multiple physical nodes.
+
+## Objective
+
+Demonstrate your understanding of **distributed agreement under failure**, and your ability to translate a foundational distributed algorithm into working, testable code using real-world tools.
+
