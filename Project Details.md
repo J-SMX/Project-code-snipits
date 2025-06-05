@@ -43,6 +43,7 @@ These modules played a central role in supporting data-driven management feature
 
 # Project 2: Machine Learning CS3920/CS5920 Nearest Neighbours Classifier Coursework
 
+Grade Achieved: 65%
 **Focus**: Implementation of Nearest Neighbour and Conformal Prediction algorithms  
 **Language**: Python (Jupyter Notebook)  
 **Tools**: NumPy, Matplotlib (no external ML libraries)
