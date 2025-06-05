@@ -1,4 +1,71 @@
-# Project 1: Large-Scale Data Storage and Processing CS4234/5234 Project Overview
+# OVERVIEW
+This file contains the general information about each of the projects included in this repository
+Projects:
+    2nd Year Project:
+    - Project 3: Team Project (Resturant website build using Django, python, and SQL)
+    3rd Year Project:
+    - Project 4: Nearest Neighbours Classifier (Machine Learning)
+    Final Year Projects:
+    - Project 1: Spark Project in python (end-to-end analytics pipeline)
+    - Project 2: Elixir Project (Building a paxos implementation for consensus in distributed systems)
+    - Final Year MSci Project: https://github.com/J-SMX/ML-algorithm-comparison-fyp
+    
+    [NOTE: Obviously these were not the only courseworks I have done in my 4 years at Royal Holloway, however other courseworks were purely Theory based (Essay writing), or are from 1st or 2nd year and are not worth showing]
+# Project 1: Team Project CS2810 Backend web dev
+
+Grade Achieved: 71% 
+
+## Overview
+
+The objective of this project was to develop a fully functional website for a restaurant, designed to support all types of users: customers, wait staff, kitchen staff, and management. Key functionality included:
+
+- **Customers**: Browsing the menu, placing orders, and making payments.
+- **Wait Staff**: Confirming orders and printing receipts.
+- **Kitchen Staff**: Viewing incoming orders and updating order statuses.
+- **Management**: Accessing financial reports and tracking order times.
+
+This system was built as a collaborative team effort, with responsibilities divided by file and feature. The code included in this repository represents only the components I personally developed. While my main focus was on backend development, I also contributed minor assistance to the frontend team when needed.
+
+## Implementation
+
+The project stack included **Python**, **SQL**, **Django**, **CSS**, **HTML**, **JavaScript**, and **PostgreSQL**. My primary contributions were in **Python** and **SQL**, specifically:
+
+- Designing and implementing the **database models**.
+- Writing **unit tests** to validate the models and their integration with the rest of the system.
+
+In addition to standard models, I developed two **advanced modules**:
+
+- `financial.py`: A custom analytics engine for generating financial reports, averages, trends, and customer metrics using raw SQL and time-based logic.
+- `search.py`: A modular, SQL-powered search system capable of filtering users, orders, and menu items, with support for logging and extensibility.
+
+These modules played a central role in supporting data-driven management features and internal staff workflows.
+
+
+# Project 2: Machine Learning CS3920/CS5920 Nearest Neighbours Classifier Coursework
+
+**Focus**: Implementation of Nearest Neighbour and Conformal Prediction algorithms  
+**Language**: Python (Jupyter Notebook)  
+**Tools**: NumPy, Matplotlib (no external ML libraries)
+
+## Overview
+
+This project involved implementing the **1-Nearest Neighbour (1-NN)** classification algorithm entirely from scratch, without relying on pre-built machine learning libraries. The coursework emphasized understanding the mechanics of distance-based classification and how such models can be extended with **conformal prediction techniques** to estimate uncertainty in predictions.
+
+Two datasets were used:
+- **Iris dataset** – A classic dataset for multi-class classification (3 flower types).
+- **Ionosphere dataset** – A binary classification task based on radar signals.
+
+## Tasks
+
+Key tasks included:
+- Writing a custom implementation of the **1-NN algorithm**.
+- Running and evaluating the model on both datasets.
+- Optionally implementing:
+  - The **3-NN algorithm** for comparison.
+  - A **conformal predictor** using distance-based conformity measures to estimate prediction confidence.
+
+
+# Project 3: Large-Scale Data Storage and Processing CS4234/5234 Project Overview
 
 Grade Achieved:
   - 90% for main code
@@ -27,26 +94,13 @@ This project involves building an **end-to-end analytics pipeline** using big da
   - Investigate if **max node degree scales** linearly with number of nodes.
   - Evaluate **scale-freeness** by plotting in/out degree distributions on a log-log scale and estimating the **power-law exponent α**.
 
-## Skills Demonstrated
-
-- Real-world data cleaning and parsing.
-- Distributed computation with Spark RDDs (no DataFrames/SparkSQL).
-- Graph-based analysis of communication patterns.
-- Statistical and visual analysis of large-scale network structure.
-
 ## Dataset
 
 - Enron email dataset (~0.5M messages) stored in HDFS as Hadoop Sequence Files.
 - Use smaller sample datasets for development; run final analysis on the full dataset.
 
-## Tools & Constraints
 
-- Language: Python (RDD API only)
-- Environment: Spark on the `bigdata` cluster
-- No generative AI usage permitted
-
-
-# Project 2: Advanced Distributed Systems CS4860/5860 Paxos Implementation Project Overview
+# Project 4: Advanced Distributed Systems CS4860/5860 Paxos Implementation Project Overview
 
 Grade Achieved: 60%
 
@@ -81,8 +135,4 @@ Your implementation will be tested against a suite of unit and integration tests
 - **Basic Protocol**: Correct handling of Paxos phases with concurrent ballots.
 - **Crash Fault Tolerance**: Proper behavior in the event of leader or follower failure.
 - **Distributed Operation**: Working correctly across multiple physical nodes.
-
-## Objective
-
-Demonstrate your understanding of **distributed agreement under failure**, and your ability to translate a foundational distributed algorithm into working, testable code using real-world tools.
 
