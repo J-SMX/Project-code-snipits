@@ -10,7 +10,7 @@ Projects:
     - Project 2: Elixir Project (Building a paxos implementation for consensus in distributed systems)
     - Final Year MSci Project: https://github.com/J-SMX/ML-algorithm-comparison-fyp
     
-    [NOTE: Obviously these were not the only courseworks I have done in my 4 years at Royal Holloway, however other courseworks were purely Theory based (Essay writing), or are from 1st or 2nd year and are not worth showing]
+    NOTE: Obviously these were not the only courseworks I have done in my 4 years at Royal Holloway, however other courseworks were purely Theory based (Essay writing), or are from 1st or 2nd year and are not worth showing
 # Project 1: Team Project CS2810 Backend web dev
 
 Grade Achieved: 71% 
