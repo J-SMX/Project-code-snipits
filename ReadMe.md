@@ -1,16 +1,18 @@
 # OVERVIEW
 This file contains the general information about each of the projects included in this repository
 Projects:
-    2nd Year Project:
-    - Project 3: Team Project (Resturant website build using Django, python, and SQL)
-    3rd Year Project:
-    - Project 4: Nearest Neighbours Classifier (Machine Learning)
-    Final Year Projects:
-    - Project 1: Spark Project in python (end-to-end analytics pipeline)
-    - Project 2: Elixir Project (Building a paxos implementation for consensus in distributed systems)
-    - Final Year MSci Project: https://github.com/J-SMX/ML-algorithm-comparison-fyp
+
+- 2nd Year Project:
+  - Project 3: Team Project (Resturant website build using Django, python, and SQL)
+- 3rd Year Project:
+  - Project 4: Nearest Neighbours Classifier (Machine Learning)
+- Final Year Projects:
+  - Project 1: Spark Project in python (end-to-end analytics pipeline)
+  - Project 2: Elixir Project (Building a paxos implementation for consensus in distributed systems)
+  - Final Year MSci Project: https://github.com/J-SMX/ML-algorithm-comparison-fyp
     
-    NOTE: Obviously these were not the only courseworks I have done in my 4 years at Royal Holloway, however other courseworks were purely Theory based (Essay writing), or are from 1st or 2nd year and are not worth showing
+
+NOTE: Obviously these were not the only courseworks I have done in my 4 years at Royal Holloway, however other courseworks were purely Theory based (Essay writing), or are from 1st or 2nd year and are not worth showing
 # Project 1: Team Project CS2810 Backend web dev
 
 Grade Achieved: 71% 
@@ -43,7 +45,8 @@ These modules played a central role in supporting data-driven management feature
 
 # Project 2: Machine Learning CS3920/CS5920 Nearest Neighbours Classifier Coursework
 
-Grade Achieved: 65%
+**Grade Achieved**: 65%
+
 **Focus**: Implementation of Nearest Neighbour and Conformal Prediction algorithms  
 **Language**: Python (Jupyter Notebook)  
 **Tools**: NumPy, Matplotlib (no external ML libraries)
@@ -88,7 +91,7 @@ This project involves building an **end-to-end analytics pipeline** using big da
 
 ## Report Tasks
 
-- **Function Analysis**: Choose one function you implemented; include its code, describe key design decisions, draw its Spark DAG (lineage graph), and identify **narrow vs. wide dependencies**.
+- **Function Analysis**: Choose one function implemented; include its code, describe key design decisions, draw its Spark DAG (lineage graph), and identify **narrow vs. wide dependencies**.
 
 - **Network Slice Analysis**: For a 12-month period between Jan 2000–Mar 2002:
   - Test the **80/20 rule** (Pareto principle): Do ~20% of users account for ~80% of communication?
@@ -114,11 +117,11 @@ FlyWithMe.com needs a system where:
 - Seat reservations must be conflict-free even with concurrent proposals.
 - The system continues to operate as long as a **majority of nodes** are functional.
 
-To meet these requirements, you must implement a **Paxos protocol layer**.
+To meet these requirements, a **Paxos protocol layer** must be implemented.
 
 ## Implementation Requirements
 
-You are required to complete the `paxos.ex` Elixir file to support the following operations:
+The `paxos.ex` Elixir file to support the following operations:
 
 - `start(name, participants, upper)`: Starts a Paxos process and registers it.
 - `propose(pid, value)`: Submits a value for consensus (does nothing until `start_ballot` is called).
@@ -130,8 +133,6 @@ This involves handling:
 - Leader election and value agreement.
 
 ## Evaluation Goals
-
-Your implementation will be tested against a suite of unit and integration tests. Marks are awarded based on the following capabilities:
 
 - **Basic Protocol**: Correct handling of Paxos phases with concurrent ballots.
 - **Crash Fault Tolerance**: Proper behavior in the event of leader or follower failure.
