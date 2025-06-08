@@ -3,12 +3,12 @@ This file contains the general information about each of the projects included i
 Projects:
 
 - 2nd Year Project:
-  - Project 3: Team Project (Resturant website build using Django, python, and SQL)
+  - Project 1: Team Project (Resturant website build using Django, python, and SQL)
 - 3rd Year Project:
-  - Project 4: Nearest Neighbours Classifier (Machine Learning)
+  - Project 2: Nearest Neighbours Classifier (Machine Learning)
 - Final Year Projects:
-  - Project 1: Spark Project in python (end-to-end analytics pipeline)
-  - Project 2: Elixir Project (Building a paxos implementation for consensus in distributed systems)
+  - Project 3: Spark Project in python (end-to-end analytics pipeline)
+  - Project 4: Elixir Project (Building a paxos implementation for consensus in distributed systems)
   - Final Year MSci Project: https://github.com/J-SMX/ML-algorithm-comparison-fyp
     
 
